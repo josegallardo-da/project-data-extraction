@@ -1,46 +1,48 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
+<img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Project: API and Web Data Scraping
+# Extracting Data from the UN COMTRADE DATABASE
+*[Jose Gallardo]*
 
-## Overview
+*[Data Analytics Part Time, Ironhack Mexico City]*
 
-The goal of this project is for you to practice what you have learned in the APIs and Web Scraping chapter of this program. For this project, you will choose both an API to obtain data from and a web page to scrape. For the API portion of the project will need to make calls to your chosen API, successfully obtain a response, request data, convert it into a Pandas data frame, and export it as a CSV file. For the web scraping portion of the project, you will need to scrape the HTML from your chosen page, parse the HTML to extract the necessary information, and either save the results to a text (txt) file if it is text or into a CSV file if it is tabular data.
+## Content
+- [Project Description](#project-description)
+- [Workflow](#workflow)
 
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
+<a name="project-description"></a>
 
----
+## Project Description
+The purpose behind this project is to be able to extract all data regarding Mexico's international operations (imports & exports), using UN COMTRADE DATABASE's Public API.
 
-## Technical Requirements
+After exploring the data through different queries in Postman, the following insights were gathered:
 
-The technical requirements for this project are as follows:
+Mexico started reporting its operations until 1990, so prior to this year, all data is unavailable.
 
-* You must obtain data from an API using Python.
-* You must scrape and clean HTML from a web page using Python.
-* The results should be two files - one containing the tabular results of your API request and the other containing the results of your web page scrape.
-* Your code should be saved in a Jupyter Notebook and your results should be saved in a folder named output.
-* You should include a README.md file that describes the steps you took and your thought process for obtaining data from the API and web page.
+From 1990 to 2009, all data reported by Mexico was recorded by Year, so we are not going to be able to explore how trade perfomed month by month in this time period.
 
-## Necessary Deliverables
+Keep in mind the following ...
 
-The following deliverables should be pushed to your Github repo for this chapter.
+Public Users have only access to 1000 queries per hour, 1 query per second. *Queries should be specific and simple.
+So, the challenge was to create a program that automatically extracts the data considering all the restrictions that we Public Users have.
 
-* **A Jupyter Notebook (.ipynb) file** that contains the code used to work with your API and scrape your web page.
-* **An output folder** containing the outputs of your API and scraping efforts.
-* **A ``README.md`` file** containing a detailed explanation of your approach and code for retrieving data from the API and scraping the web page as well as your results, obstacles encountered, and lessons learned.
+<a name="workflow"></a>
 
-## Suggested Ways to Get Started
+## Workflow
+1. Build from scratch a pseudocode to outline the idea.
+2. Gather information from different resources to understand the tools that apply to this project's needs.
+3. Import the libraries prior the coding process. 
+4. Start with a try & error stage. 
+5. Debug the code before attempting to simplify it.
+6. Make a legible layout (documentation included) by merging all the functions into a master function. 
+7. Run a second try & error stage.
+8. Start extracting data.
+9. Identify how the data must be processed and cleaned to be reliable for further analysis in the future.
+10. Implement a function for data cleaning.
+11. Execute a Final Diagnosis. 
+10. Start exploring the Data.
 
-* **Find an API to work with** - a great place to start looking would be [API List](https://apilist.fun/) and [Public APIs](https://github.com/toddmotto/public-apis). If you need authorization for your chosen API, make sure to give yourself enough time for the service to review and accept your application. Have a couple back-up APIs chosen just in case!
-* **Find a web page to scrape** and determine the content you would like to scrape from it - blogs and news sites are typically good candidates for scraping text content, and [Wikipedia](https://www.wikipedia.org/) is usually a good source for HTML tables (search for "list of...").
-* **Break the project down into different steps** - note the steps covered in the API and web scraping lessons, try to follow them, and make adjustments as you encounter the obstacles that are inevitable due to all APIs and web pages being different.
-* **Use the tools in your tool kit** - your knowledge of intermediate Python as well as some of the things you've learned in previous chapters. This is a great way to start tying everything you've learned together!
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+## Let's Connect
 
-## Useful Resources
+_Jose Gallardo_
 
-* [Requests Library Documentation: Quickstart](http://docs.python-requests.org/en/master/user/quickstart/)
-* [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-* [Stack Overflow Python Requests Questions](https://stackoverflow.com/questions/tagged/python-requests)
-* [StackOverflow BeautifulSoup Questions](https://stackoverflow.com/questions/tagged/beautifulsoup)
+<img src="https://github.com/josegallardo-da/project-build-your-own-game/blob/master/img/jg.jpg" alt="LinkedIn" width="210"/>
